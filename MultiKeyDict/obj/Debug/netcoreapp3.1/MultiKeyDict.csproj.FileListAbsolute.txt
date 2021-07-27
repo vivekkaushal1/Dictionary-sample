@@ -1,0 +1,13 @@
+\\Mac\Home\Desktop\amvivek\dict-sample\MultiKeyDict\MultiKeyDict\bin\Debug\netcoreapp3.1\MultiKeyDict.exe
+\\Mac\Home\Desktop\amvivek\dict-sample\MultiKeyDict\MultiKeyDict\bin\Debug\netcoreapp3.1\MultiKeyDict.deps.json
+\\Mac\Home\Desktop\amvivek\dict-sample\MultiKeyDict\MultiKeyDict\bin\Debug\netcoreapp3.1\MultiKeyDict.runtimeconfig.json
+\\Mac\Home\Desktop\amvivek\dict-sample\MultiKeyDict\MultiKeyDict\bin\Debug\netcoreapp3.1\MultiKeyDict.runtimeconfig.dev.json
+\\Mac\Home\Desktop\amvivek\dict-sample\MultiKeyDict\MultiKeyDict\bin\Debug\netcoreapp3.1\MultiKeyDict.dll
+\\Mac\Home\Desktop\amvivek\dict-sample\MultiKeyDict\MultiKeyDict\bin\Debug\netcoreapp3.1\MultiKeyDict.pdb
+\\Mac\Home\Desktop\amvivek\dict-sample\MultiKeyDict\MultiKeyDict\obj\Debug\netcoreapp3.1\MultiKeyDict.csproj.AssemblyReference.cache
+\\Mac\Home\Desktop\amvivek\dict-sample\MultiKeyDict\MultiKeyDict\obj\Debug\netcoreapp3.1\MultiKeyDict.AssemblyInfoInputs.cache
+\\Mac\Home\Desktop\amvivek\dict-sample\MultiKeyDict\MultiKeyDict\obj\Debug\netcoreapp3.1\MultiKeyDict.AssemblyInfo.cs
+\\Mac\Home\Desktop\amvivek\dict-sample\MultiKeyDict\MultiKeyDict\obj\Debug\netcoreapp3.1\MultiKeyDict.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\amvivek\dict-sample\MultiKeyDict\MultiKeyDict\obj\Debug\netcoreapp3.1\MultiKeyDict.dll
+\\Mac\Home\Desktop\amvivek\dict-sample\MultiKeyDict\MultiKeyDict\obj\Debug\netcoreapp3.1\MultiKeyDict.pdb
+\\Mac\Home\Desktop\amvivek\dict-sample\MultiKeyDict\MultiKeyDict\obj\Debug\netcoreapp3.1\MultiKeyDict.genruntimeconfig.cache
