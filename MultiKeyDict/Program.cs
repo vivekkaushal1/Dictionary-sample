@@ -5,14 +5,17 @@ namespace MultiKeyDict
 {
     class Program
     {
+        // initialize an empty dict of string keys and list vals.
         public static Dictionary<string, List<string>> result = new Dictionary<string, List<string>>();
-        static int memCount = 1;
+        static int memCount = 1; // variable to print counts in the list.
         
+        // funciton to check if the keyExists
         public static bool keyExists(string key)
         {
             return result.ContainsKey(key);
         }
 
+        // function to check if a memberExists
         public static bool memberExists(string key, string val)
         {
             bool memEx = false;
@@ -23,6 +26,8 @@ namespace MultiKeyDict
             return memEx;
         }
 
+        // prints all members for the key
+        // if pair is set print key: val pairs.
         public static void printMembers(string key, bool reset, bool pair = false)
         {
             if (reset)
@@ -46,25 +51,19 @@ namespace MultiKeyDict
 
         public static void Main(string[] args)
         {
-            //Dictionary<string, List<string>> result = new Dictionary<string, List<string>>();
-            
             while (true)
             {
-                // Get the key: val pair
+                // Get the operation key val
                 Console.WriteLine("Enter the operation, key and val: ");
-                var inputParams = (Console.ReadLine()).Split(" ");
-
-                //Console.WriteLine($"Input: {String.Join(",", inputParams)}");
-
-                string reqOperation = inputParams[0];
+                var inputParams = (Console.ReadLine()).Split(" "); // params[0]: operation, params[1]: key params[2]: val
                
-                if (reqOperation != null)
+                if (inputParams[0] != null)
                 {
-                    switch (reqOperation.ToUpper())
+                    switch (inputParams[0].ToUpper())
                     {
-
+                        // print all items in the dictionary (key: val)
                         case "ITEMS":
-                            if (result.Count > 0)
+                            if (result.Count > 0) // check if dictionary is not empty
                             {
                                 bool resetNeeded = true;
                                 foreach (string key in result.Keys)
@@ -79,9 +78,9 @@ namespace MultiKeyDict
                             }
                             break;
 
-
+                        // print all memebers of the dictionary for all keys
                         case "ALLMEMBERS":
-                            if (result.Count > 0)
+                            if (result.Count > 0) // check if dictionary is not empty
                             {
                                 bool resetNeeded = true;
                                 foreach (string key in result.Keys)
@@ -95,9 +94,10 @@ namespace MultiKeyDict
                                 Console.WriteLine("{}");
                             }
                             break;
-
+                        
+                        // check if the given key exists in the dict
                         case "KEYEXISTS":
-                            if (inputParams[1] != null)
+                            if (inputParams[1] != null) // check if key is provided in cmd line
                             {
                                 Console.WriteLine(keyExists(inputParams[1]));
                             }
@@ -107,7 +107,9 @@ namespace MultiKeyDict
                             }
                             break;
 
+                        // return true if the given memeber is found
                         case "MEMBEREXISTS":
+                            // check if all params are provided
                             if (inputParams.Length == 3 && inputParams[1] != null && inputParams[2] != null)
                             {
                                 Console.WriteLine(memberExists(inputParams[1], inputParams[2]));
@@ -118,11 +120,13 @@ namespace MultiKeyDict
                             }
                             break;
 
+                        // clear the dict
                         case "CLEAR":
                             result.Clear();
                             Console.WriteLine("Cleared");
                             break;
 
+                        // get memebers
                         case "MEMBERS":
                             if (inputParams[1] != null && keyExists(inputParams[1]))
                             {
@@ -134,6 +138,7 @@ namespace MultiKeyDict
                             }
                             break;
 
+                        // remove the given member for the given key
                         case "REMOVE":
                             if (inputParams[1] != null && inputParams[2] != null)
                             {
@@ -160,6 +165,7 @@ namespace MultiKeyDict
                             }
                             break;
 
+                        // remove the key from the dict
                         case "REMOVEALL":
                             if (inputParams[1] != null)
                             {
@@ -180,6 +186,7 @@ namespace MultiKeyDict
                                 
                             break;
 
+                        // print all keys in the dict.
                         case "KEYS":
                             if (result.Count > 0)
                             {
@@ -197,7 +204,8 @@ namespace MultiKeyDict
                             }
                             break;
 
-
+                        // add key val pair to dict.
+                        // if key exists, append val to the list
                         case "ADD":
                             // Add to dict
                             if (inputParams[1] != null && inputParams[2] != null)
@@ -226,6 +234,7 @@ namespace MultiKeyDict
                             }
                             break;
 
+                        // if operation not defined.
                         default:
                             Console.WriteLine("Invalid");
                             break;
